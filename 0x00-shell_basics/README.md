@@ -1,0 +1,1 @@
+Doing basic shells functions
