@@ -1,2 +1,2 @@
 #!/bin/bash
-ls --sort=time -1
+ls -t -1
