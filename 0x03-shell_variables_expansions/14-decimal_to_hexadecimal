@@ -1,2 +1,3 @@
 #!/bin/bash
-printf '%x\n' "$((2#101010101))"
+printf '%x\n' DECIMAL
+
