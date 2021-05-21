@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# Configure SSH to connect to server w/o password
+Host web01
+        HostName 18.234.212.136
+	User unbuntu
+	Port 22
+	StrictHostKeyChecking no
+	identityFile ~/.ssh/holberton
