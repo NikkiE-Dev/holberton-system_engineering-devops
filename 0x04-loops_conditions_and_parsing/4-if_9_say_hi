@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 #Displays Holberton School 10 times, after 9th display Hi using while loop
-i=1
-while [ $i -lt 11 ]
+i=0
+while [ $i -lt 10 ]
 do
-    if [[ "$i" == "10" ]];
+    if [[ "$i" == "9" ]];
     then 
         echo Hi
     fi
