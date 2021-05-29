@@ -6,13 +6,13 @@ if [ -f "$file" -o -b "$file" -o -c "$file" -o -d "$file" ]; then
         echo "$file file exists"
         if [ -f "$file" ]; then
                 if [ "$(wc -c $file)" != "0" ]; then
-                        echo "$file is not empty" 
+                        echo "$file file is not empty" 
                 else
                         echo "$file is empty"
                 fi
                 echo "$file is a regular file"
         else
-                echo "$file is not empty"
+                echo "$file file is not empty"
         fi
 else
         echo "$file does not exist"
