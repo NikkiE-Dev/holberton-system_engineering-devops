@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# Installing nginx
+
+sudo apt-get -y update 
+sudo apt-get -y upgrade 
+sudo apt-get -y install nginx  
+sudo service nginx start
+echo "Holberton School for the win!" | sudo tee /var/www/html/index.nginx-debian.html
