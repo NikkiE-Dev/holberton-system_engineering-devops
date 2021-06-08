@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Installing nginx
+# Creating custom error page
 
 sudo apt-get -y update 
 sudo apt-get -y upgrade 
