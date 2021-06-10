@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Adding Server Header
+# Adding Round Robin to loadbalancer
 
 sudo apt-get -y update 
 sudo apt-get -y upgrade 
