@@ -5,6 +5,7 @@ import sys
 
 
 def employ_task(employeeID):
+    """Gathing employee info"""
     name = ''
     task_list = []
     compl_task = 0
