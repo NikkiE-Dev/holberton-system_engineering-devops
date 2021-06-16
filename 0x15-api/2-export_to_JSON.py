@@ -23,7 +23,7 @@ def export_to_json(employeeID):
 
     for task in todosJson:
         taskDict = {}
-        taskDict["task"] = task.get('username')
+        taskDict["task"] = task.get('title')
         taskDict["username"] = username
         taskDict["completed"] = task.get('completed')
 
