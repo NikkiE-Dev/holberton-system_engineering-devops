@@ -33,7 +33,7 @@ def export_to_json(employeeID):
 
     with open("{}.json".format(employeeID), 'w') as jsonFile:
         json.dump(userDict, jsonFile,)
-    
+
     return 0
 
 if __name__ == "__main__":
