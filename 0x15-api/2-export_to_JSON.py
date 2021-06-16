@@ -32,7 +32,7 @@ def export_to_json(employeeID):
         userDict[employeeID].append(taskDict)
 
     with open("{}.json".format(employeeID), 'w') as jsonFile:
-        json.dump(userDict, jsonFile,)
+        json.dump(userDict, jsonFile)
 
     return 0
 
