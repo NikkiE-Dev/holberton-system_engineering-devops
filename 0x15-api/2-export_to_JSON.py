@@ -11,8 +11,6 @@ def export_to_json(employeeID):
     username = ''
     userDict = {}
 
-    print("userDict: {}".format(userDict))
-
     users = requests.get('https://jsonplaceholder.typicode.com/users/{}'
                          .format(employeeID))
     todos = requests.get('https://jsonplaceholder.typicode.com/users/{}/todos/'
