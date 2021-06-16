@@ -6,6 +6,7 @@ import sys
 
 
 def save_to_csv(employeeID):
+    """Saving info gathered to CSV file"""
     username = ''
     allTasks = []
 
