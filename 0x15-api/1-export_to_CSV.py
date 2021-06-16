@@ -10,10 +10,10 @@ def save_to_csv(employeeID):
     username = ''
     allTasks = []
 
-    users = requests.get(
-        'https://jsonplaceholder.typicode.com/users/{}'.format(employeeID))
-    todos = requests.get(
-        'https://jsonplaceholder.typicode.com/users/{}/todos/'.format(employeeID))
+    users = requests.get('https://jsonplaceholder.typicode.com/users/{}'
+                         .format(employeeID))
+    todos = requests.get('https://jsonplaceholder.typicode.com/users/{}/todos/'
+                         .format(employeeID))
 
     username = users.json().get('username')
     todosJson = todos.json()
