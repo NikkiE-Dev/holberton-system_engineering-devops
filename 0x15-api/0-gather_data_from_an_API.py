@@ -1,11 +1,12 @@
 #!/usr/bin/python3
+"""File for API"""
 
 import requests
 import sys
 
 
 def employ_task(employeeID):
-    """Gathing employee info"""
+"""Gathing employee info"""
     name = ''
     task_list = []
     compl_task = 0
