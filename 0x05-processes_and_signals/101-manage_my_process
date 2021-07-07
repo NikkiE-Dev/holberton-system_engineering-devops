@@ -5,7 +5,7 @@ key=$1
 case $key in
           "start")
                   ./manage_my_process &
-                  touch /var/run/my_process.pid
+                  echo $! > /var/run/my_process.pid
                   echo manage_my_process started
                   ;;
           "stop")
@@ -18,7 +18,7 @@ case $key in
                   proc=$(cat /var/run/my_process.pid)
                   kill -s SIGSTOP "$proc"
                   rm /var/run/my_process.pid
-                  touch /var/run/my_process.pid
+                  echo $! > /var/run/my_process.pid
                   echo manage_my_process restarted
                   ;;
           *)
