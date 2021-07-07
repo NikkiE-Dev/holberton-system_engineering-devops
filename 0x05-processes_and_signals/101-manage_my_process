@@ -8,21 +8,20 @@ case $key in
                   touch /var/run/my_process.pid
                   echo manage_my_process started
                   ;;
-          
           "stop")
                   proc=$(cat /var/run/my_process.pid)
-                  kill -s SIGSTOP $proc
+                  kill -s SIGSTOP "$proc"
                   rm /var/run/my_process.pid
                   echo manage_my_process stopped
                   ;;
           "restart")
                   proc=$(cat /var/run/my_process.pid)
-                  kill -s SIGSTOP $proc
+                  kill -s SIGSTOP "$proc"
                   rm /var/run/my_process.pid
                   touch /var/run/my_process.pid
-                  echo manage_my_process started
+                  echo manage_my_process restarted
                   ;;
           *)
-                  echo Usage: manage_my_process {start|stop|restart}
+                  echo "Usage: manage_my_process {start|stop|restart}"
                   ;;
 esac
