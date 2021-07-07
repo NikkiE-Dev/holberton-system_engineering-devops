@@ -18,6 +18,7 @@ case $key in
                   proc=$(cat /var/run/my_process.pid)
                   kill -s SIGSTOP "$proc"
                   rm /var/run/my_process.pid
+                  ./manage_my_process &
                   echo $! > /var/run/my_process.pid
                   echo manage_my_process restarted
                   ;;
